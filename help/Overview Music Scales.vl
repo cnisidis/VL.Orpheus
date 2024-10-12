@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="CzBbCME1ZPmLpdrTfhEwex" LanguageVersion="2024.6.7-0178-g62ce298253" Version="0.128">
+  <NugetDependency Id="A2dMQwXjtFHLWLIqeXImvh" Location="VL.CoreLib" Version="2024.6.7-0178-g62ce298253" />
+  <Patch Id="SJHwqfQrD90LX93BmZAFh3">
+    <Canvas Id="UzUSLKVE8wKMui0wo3hauo" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="QxYSxSxguKTM8cy6mveSaP">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="V483P6jVl6jLGZcPwaNW6S">
+        <Canvas Id="VngAB2uHXcDONjnVwxpDq5" CanvasType="Group">
+          <Node Bounds="849,486,65,19" Id="BWoCFqZTEFFPWpc29bEtBn">
+            <p:NodeReference LastCategoryFullName="VL.Harmonia" LastDependency="VL.Harmonia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Major" />
+            </p:NodeReference>
+            <Pin Id="FUeC0PPAENDOHSyw1kzYvg" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="S7j3ZKgTo4zMsvhEFGLatL" Name="Notes" Kind="InputPin" />
+            <Pin Id="Ilq914TxaKPNhxFEsRnlSZ" Name="Accidental" Kind="InputPin" />
+            <Pin Id="DbHy4rZgW8wPh0iZJdPhpk" Name="Octave" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="KEfOuJhi9IBQb1gny0fwkm" Name="Base" Kind="OutputPin" />
+            <Pin Id="AHi26TZToriLypRyUid5Os" Name="MIDI Notes" Kind="OutputPin" />
+            <Pin Id="K7M32nkzg1kPUHUy4k95ea" Name="Annotation Marks" Kind="OutputPin" />
+            <Pin Id="Thb4q8t8OMyQCfyWrn0uNX" Name="Base" Kind="InputPin" DefaultValue="36" />
+          </Node>
+          <Node Bounds="806,713,65,19" Id="E9aDKSdaLqoLZRrOMZF1uf">
+            <p:NodeReference LastCategoryFullName="VL.Harmonia" LastDependency="VL.Harmonia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Minor" />
+            </p:NodeReference>
+            <Pin Id="RuCjDBcgI22QdMYQcV3rol" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="N5yF4Z6i4OML0ST0ykVm0Q" Name="Base" Kind="InputPin" />
+            <Pin Id="TKjy1KWo72rN8AGRo5UWSi" Name="Accidental" Kind="InputPin" DefaultValue="FLAT" />
+            <Pin Id="TysJL3ArRYyQb9LYMuD7tn" Name="Octave" Kind="InputPin" />
+            <Pin Id="GhHrrJxfKciM1CB9OfEtSg" Name="Base" Kind="OutputPin" />
+            <Pin Id="JGzaBKRXObyMi8Il59yGt2" Name="Notes" Kind="OutputPin" />
+            <Pin Id="UHjLb6uA8B8PcbFw1Xxi3u" Name="Count" Kind="InputPin" />
+            <Pin Id="Sdy44sdtPZQNKFNEyhnfBn" Name="Annotations" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1011,562,63,19" Id="JOCQHkVmXKaP8gO5cBi1rf">
+            <p:NodeReference LastCategoryFullName="VL.Harmonia" LastDependency="VL.Harmonia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Chromatic" />
+            </p:NodeReference>
+            <Pin Id="St9lqGTp8A2Ph6sqTImfrW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="T5AWLiW90rVPDCaPxPSjC1" Name="Base" Kind="InputPin" DefaultValue="36" />
+            <Pin Id="JbBf7WJwB4hQdtk2LfyLbk" Name="Octave" Kind="InputPin" />
+            <Pin Id="Tvjg9cGLTuLMuH7ePbi1WT" Name="Base" Kind="OutputPin" />
+            <Pin Id="GVWqFwAvUyTQGVXMU0VW59" Name="Notes" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VBLjj5eONjIPRQTm4xV4rY" Comment="Octave" Bounds="1071,497,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="G9d6uPL7aizPcBCqCriyuS" Comment="Base" Bounds="1013,480,35,15" ShowValueBox="true" isIOBox="true" Value="36">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1340,1593,65,19" Id="SyhysszwDZCMegZVUbQdMK">
+            <p:NodeReference LastCategoryFullName="VL.Harmonia" LastDependency="VL.Harmonia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Minor" />
+            </p:NodeReference>
+            <Pin Id="Q6xzIaALW58MODILCPjbde" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DnqmbZ0kIzRNiXfXsWcOfH" Name="Base" Kind="InputPin" />
+            <Pin Id="FTxHEWDjy4ZNHJkv2MBLDr" Name="Accidental" Kind="InputPin" />
+            <Pin Id="EX3yBxUZCnzLLvmP7JPFCG" Name="Octave" Kind="InputPin" />
+            <Pin Id="FjmHGuYMsiCOlKPvLWUPbY" Name="Base" Kind="OutputPin" />
+            <Pin Id="VGO5kjMBQuSPjs9h7EUGrJ" Name="Notes" Kind="OutputPin" />
+            <Pin Id="VlovL8GzfJZPyqvJYE1QGq" Name="Count" Kind="InputPin" />
+            <Pin Id="LqBBmVsBCuLMAoXd7a4eZz" Name="Annotations" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QFVF9EPrn01NSUL2mtKmg8" Comment="Notes" Bounds="1379,1759,49,238" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">47</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Node Bounds="847,515,47,19" Id="L2Imt8Tw2QcLV595QzZeUU">
+            <p:NodeReference LastCategoryFullName="VL.Harmonia" LastDependency="VL.Harmonia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Dorian" />
+            </p:NodeReference>
+            <Pin Id="Umr3FNfePtDO60kiJcCLWi" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MobTHkcsSHoPWHCFCcB10B" Name="Iteration Count" Kind="InputPin" />
+            <Pin Id="Nj5r5WaXW98QXpwtlHWqup" Name="Base" Kind="InputPin" />
+            <Pin Id="IHwVjWNQW2TNcoqaerO1WE" Name="Octave" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="HdW8fp8WQFeOH6gKy04P2e" Name="Base" Kind="OutputPin" />
+            <Pin Id="V4BLVs77SYeO42xinV9Bx0" Name="Notes" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="847,568,46,19" Id="OrBVhEyLiLMOcvNZArT9gb">
+            <p:NodeReference LastCategoryFullName="VL.Harmonia" LastDependency="VL.Harmonia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Lydian" />
+            </p:NodeReference>
+            <Pin Id="KrtLfOLDd4zL15OJtArvDB" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="A05SfQdSbHiN3YPFvdvI0d" Name="Iteration Count" Kind="InputPin" />
+            <Pin Id="Nh5IzzLh9FbOYoDqclBhMN" Name="Base" Kind="InputPin" />
+            <Pin Id="VMbApqISiHaP6OUbztb8fX" Name="Octave" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="IMOPNu6V6SSLJgAd30LIkX" Name="Base" Kind="OutputPin" />
+            <Pin Id="EsEySNX0eQ6LjkIoHOkrWO" Name="Notes" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="845,544,56,19" Id="F85k9OXykqmLuyuhDDpjQY">
+            <p:NodeReference LastCategoryFullName="VL.Harmonia" LastDependency="VL.Harmonia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Phrygian" />
+            </p:NodeReference>
+            <Pin Id="BtMfzAdYmJvOkumdzFCvUm" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LJznMuxxiKNL4MwRH3pgOJ" Name="Iteration Count" Kind="InputPin" />
+            <Pin Id="DpnK5mVS3RIPMLgBwdg5u6" Name="Base" Kind="InputPin" />
+            <Pin Id="R75CJLKgLbMMBGDgYLw7ms" Name="Octave" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="FhCwZR9zDQCOECYwm1DHjx" Name="Base" Kind="OutputPin" />
+            <Pin Id="AUePOL3lTtnPnsw2Kt6FH4" Name="Notes" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TV8Y7eZ7o5gNtK10Zux2l1" Bounds="1262,272,377,19" ShowValueBox="true" isIOBox="true" Value="m = 12*log2(fm/440 Hz) + 69 and fm = 2(m−69)/12(440 Hz)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1559,310,25,19" Id="VEcjUxz9qg0PE4FZhZYK9q">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="*" />
+            </p:NodeReference>
+            <Pin Id="BV6d3Tljn4ELDoluvEFb8W" Name="Input" Kind="InputPin" />
+            <Pin Id="VSAMDTmHmuDNDktF8NA0oB" Name="Input 2" Kind="InputPin" />
+            <Pin Id="SV6p4wgQlsEPSZHEIqDRSu" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TahtkKCeF43LdB4pzqXWvP" Comment="Base" Bounds="836,371,36,95" ShowValueBox="true" isIOBox="true" Value="C">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UWc1lVR0jyVM1mh6KT87hP" Comment="Iteration Count" Bounds="835,262,35,15" ShowValueBox="true" isIOBox="true" Value="7">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NcO3uaXgozkOEnEZ8iPhkv" Comment="Octave" Bounds="967,296,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KKLX2gng9goPR6ygF9y6sx" Comment="Notes" Bounds="836,789,35,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CNgoqfw2rGyNIM90AuIsxj" Comment="Notes" Bounds="1074,650,37,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="K00StLhgAeTL6z4cYhsfnY" Comment="Notes" Bounds="934,367,35,126" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">38</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item>C</Item>
+              <Item>D</Item>
+              <Item>D♯</Item>
+              <Item>F</Item>
+              <Item>G</Item>
+              <Item>A</Item>
+              <Item>A♯</Item>
+            </p:Value>
+          </Pad>
+          <Node Bounds="1105,370,45,19" Id="BJxet0j0ymDPPQ8PWl24Jl">
+            <p:NodeReference LastCategoryFullName="VL.Orpheus" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Major" />
+            </p:NodeReference>
+            <Pin Id="Ax7DDBuuZV4MfgAtS8ovEq" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LqYFsPjkLakNe9jkXS9sxw" Name="Notes" Kind="InputPin" DefaultValue="C" />
+            <Pin Id="CdaspFQSKY7OddRFRULRWD" Name="Accidental" Kind="InputPin" DefaultValue="NONE" />
+            <Pin Id="PWKV85OrIudNpbXy7HCncf" Name="Octave" Kind="InputPin" DefaultValue="0" />
+            <Pin Id="Lm87fOVC18pNeyfxVX9z4A" Name="Base" Kind="OutputPin" />
+            <Pin Id="QteupcuR7ylP6eCNivYIZf" Name="MIDI Notes" Kind="OutputPin" />
+            <Pin Id="DsDXtkZXFEkPDfzBOibUiJ" Name="Annotation Marks" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Hfll7DmRhALQUQ7js7zBj2" Comment="Annotation Marks" Bounds="1180,441,37,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DtJzJFudRQSLxWTf38ksbx" Comment="Accidental" Bounds="1131,337,67,15" ShowValueBox="true" isIOBox="true" Value="NONE">
+            <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Utils" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="TypeFlag" Name="EnumAccidentals" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="FdlnTTGbQfdMGiq2jnxN5m" Comment="Notes" Bounds="1107,273,35,15" ShowValueBox="true" isIOBox="true" Value="C">
+            <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Utils" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="TypeFlag" Name="EnumNotes" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="614,558,108,19" Id="BStnNMvHNIlNyS2C04MzdF">
+            <p:NodeReference LastCategoryFullName="VL.Orpheus.Utils.Scales" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CalcHeptatonicScale" />
+            </p:NodeReference>
+            <Pin Id="ARttFwgEJvpQOb2NFpl8yn" Name="Intervals Pattern" Kind="InputPin" />
+            <Pin Id="SYeAIaY4h22PZArE6QeL7i" Name="Base Note" Kind="InputPin" />
+            <Pin Id="Lz2WEe3PZ0VOEL0A8PW3jz" Name="Count" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="EuK32Cv0KhKL3bvvoaW8jV" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="665,503,72,19" Id="L9h65VJ9T0cMRweobAc3JD">
+            <p:NodeReference LastCategoryFullName="VL.Orpheus.Utils.Scales" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SetBaseNote" />
+            </p:NodeReference>
+            <Pin Id="CNkKqtiVqeHMA7RyjyE8FR" Name="Notes" Kind="InputPin" DefaultValue="C" />
+            <Pin Id="DUuI8blv3g2QTq2tFysm3Z" Name="Accidental" Kind="InputPin" DefaultValue="NONE" />
+            <Pin Id="SbPObxRwjvpPD0amHegtSG" Name="Octave" Kind="InputPin" />
+            <Pin Id="SYG4CZqU1ptONEYdP1PQS9" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="521,679,77,130" Id="SLXdIDNrLzkPqBWYELFuyh">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+            </p:NodeReference>
+            <Pin Id="Tg3gPtEyatiOCuHYcXvnql" Name="Break" Kind="OutputPin" />
+            <Patch Id="K7Qn5Dv7i2yPqLYYons1Yo" ManuallySortedPins="true">
+              <Patch Id="OBM7Ahc0c7UONEbh8WVQfu" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="OgUk6oDR9lyPbt4Jiu0Y5e" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="T2Av0kAs29JOjRPaxUSrFn" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="533,742,52,19" Id="An9NlFyPQNWOiQYmAduaWW">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                </p:NodeReference>
+                <Pin Id="IgSZjV83cRSNQIROwvhrzk" Name="Input" Kind="StateInputPin" />
+                <Pin Id="TzXDFE58Z5mL1fTqbp2YEu" Name="Default Value" Kind="InputPin" />
+                <Pin Id="HNcPSM3RMsHOYhOXUZdhmc" Name="Index" Kind="InputPin" />
+                <Pin Id="IKntJFD9OPDPAMaDPtCGmv" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="UAnT8Wl2Y35P7abGunccZf" Bounds="581,685" Alignment="Top" />
+            <ControlPoint Id="B13BYAQJ0BCPZoz39XYJKD" Bounds="535,803" Alignment="Bottom" />
+          </Node>
+          <Pad Id="O7KOnBmlXIgQHt5097RJB6" Comment="" Bounds="535,865,37,126" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">30</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="613,501,47,19" Id="EujxujbtuPBLXkKsxf6NRf">
+            <p:NodeReference LastCategoryFullName="VL.Orpheus.Utils.Scales" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="MINOR" />
+            </p:NodeReference>
+            <Pin Id="Bdx8vmTwuDlNO5yrSyyQHM" Name="MINOR" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="528,596,85,19" Id="UYWC9tdZ2oeN6k1R9ohYAQ">
+            <p:NodeReference LastCategoryFullName="VL.Orpheus.Utils.Scales" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="MINOR_ANNOT" />
+            </p:NodeReference>
+            <Pin Id="MJf4sheJGPVNMd4aOjHzo3" Name="MINOR_ANNOT" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VyRf4NKin6zPMOjkfIX817" Comment="Annotations" Bounds="960,788,36,126" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">32</p:maxvisibleentries>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OTJ9dVvzxMdLPRSdtSGhyD" Comment="Base" Bounds="807,642,35,15" ShowValueBox="true" isIOBox="true" Value="C">
+            <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Utils" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="TypeFlag" Name="EnumNotes" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LTOTX5VwKuSOhJXgdls4Ox" Comment="Accidental" Bounds="895,637,67,15" ShowValueBox="true" isIOBox="true" Value="FLAT">
+            <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Utils" LastDependency="VL.Orpheus.vl">
+              <Choice Kind="TypeFlag" Name="EnumAccidentals" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="DSYAto7R7cuMoZV65Ro08M" Name="Create" />
+        <Patch Id="Vb0eBko8UrxMBfITWT1lXz" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="CMjZKopUTMrLNJu4sDHmKu">
+          <Fragment Id="HSHR06dD3B1LvlipxxZrL3" Patch="DSYAto7R7cuMoZV65Ro08M" Enabled="true" />
+          <Fragment Id="Ni7gZFDTJxNNGbaO3cthNf" Patch="Vb0eBko8UrxMBfITWT1lXz" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="DQchp0l7rgmMRvqtkpARow" Ids="VBLjj5eONjIPRQTm4xV4rY,JbBf7WJwB4hQdtk2LfyLbk" />
+        <Link Id="GU1xPtsP6e3LMppIKQi3Jq" Ids="G9d6uPL7aizPcBCqCriyuS,T5AWLiW90rVPDCaPxPSjC1" />
+        <Link Id="RtSdUOfWGh2LNb6Ieqm10m" Ids="VGO5kjMBQuSPjs9h7EUGrJ,QFVF9EPrn01NSUL2mtKmg8" />
+        <Link Id="JDBCiBF9Rd2LtirCnTjCg8" Ids="JGzaBKRXObyMi8Il59yGt2,KKLX2gng9goPR6ygF9y6sx" />
+        <Link Id="EmtyvydfiisLX6zbC88ERP" Ids="GVWqFwAvUyTQGVXMU0VW59,CNgoqfw2rGyNIM90AuIsxj" />
+        <Link Id="Bae065IQb3rMf7j5UJZAGm" Ids="DsDXtkZXFEkPDfzBOibUiJ,Hfll7DmRhALQUQ7js7zBj2" />
+        <Link Id="KshkJnoCXtwLRkzQXFWddC" Ids="DtJzJFudRQSLxWTf38ksbx,CdaspFQSKY7OddRFRULRWD" />
+        <Link Id="LocIhstZZREORr56k9oZWt" Ids="FdlnTTGbQfdMGiq2jnxN5m,LqYFsPjkLakNe9jkXS9sxw" />
+        <Link Id="JPEDS7vf79AP64Gpgd7FhN" Ids="SYG4CZqU1ptONEYdP1PQS9,SYeAIaY4h22PZArE6QeL7i" />
+        <Link Id="V8L8dZYgfVWOTTBJE4kIhF" Ids="EuK32Cv0KhKL3bvvoaW8jV,UAnT8Wl2Y35P7abGunccZf" />
+        <Link Id="TitC5e975DzNLQPstK78ww" Ids="UAnT8Wl2Y35P7abGunccZf,HNcPSM3RMsHOYhOXUZdhmc" />
+        <Link Id="HVqpoFXZEPNMM2ykpSIwAF" Ids="IKntJFD9OPDPAMaDPtCGmv,B13BYAQJ0BCPZoz39XYJKD" />
+        <Link Id="KgvfKPxIHqRPi6EMwFMZBR" Ids="B13BYAQJ0BCPZoz39XYJKD,O7KOnBmlXIgQHt5097RJB6" />
+        <Link Id="FIyAaOf7oT7Oz9gKSWwfTX" Ids="Bdx8vmTwuDlNO5yrSyyQHM,ARttFwgEJvpQOb2NFpl8yn" />
+        <Link Id="G9QqDU2RzaTPROPkR2Zexa" Ids="MJf4sheJGPVNMd4aOjHzo3,IgSZjV83cRSNQIROwvhrzk" />
+        <Link Id="MSmgCY4F4OyLfrZHXYiFaf" Ids="Sdy44sdtPZQNKFNEyhnfBn,VyRf4NKin6zPMOjkfIX817" />
+        <Link Id="UGEME0OspTHMrW97Nxjhtd" Ids="OTJ9dVvzxMdLPRSdtSGhyD,N5yF4Z6i4OML0ST0ykVm0Q" />
+        <Link Id="IncRtRGK7CyMTOiJFNZhss" Ids="LTOTX5VwKuSOhJXgdls4Ox,TKjy1KWo72rN8AGRo5UWSi" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Bm5Q75eNX06PMgAI8fa96A" Location="VL.IO.Midi" Version="1.1.1" />
+  <NugetDependency Id="E1id6Sav1nVNqwNesiPWir" Location="VL.Orpheus" Version="0.0.0" />
+</Document>
