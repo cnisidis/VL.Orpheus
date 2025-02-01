@@ -41,6 +41,8 @@ namespace VL.Orpheus
         public static Spread<string> MINOR_ANNOT => new string[] { "C", "D\u266D", "D", "E\u266D", "E", "F", "G\u266D", "G", "A\u266D", "A", "B\u266D", "B" }.ToSpread();
 
 
+        public static Spread<string> CHROMATIC => new string[] { "C", "C♯", "D", "D♯", "E", "F", "F♯", "G", "G♯", "A", "A♯", "B" }.ToSpread();
+
         public static Spread<string> FLAT_ANNOT => new string[] { "C♭", "D♭", "E♭", "F♭", "G♭", "A♭", "B♭" }.ToSpread();
 
         //one of each note letter.

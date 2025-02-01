@@ -91,7 +91,6 @@ public static class NoteSymbols
         Mixolydian,
         Aeolian,
         Locrian, 
-
         Acoustic
     }
 

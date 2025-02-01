@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UmLPTaWfuhpNDyAWn33HfD" LanguageVersion="2024.6.7-0178-g62ce298253" Version="0.128">
-  <NugetDependency Id="SyUqbFfg8NpMLi46pzs5pN" Location="VL.CoreLib" Version="2024.6.7-0178-g62ce298253" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="UmLPTaWfuhpNDyAWn33HfD" LanguageVersion="2024.6.7-0308-g293be43e1a" Version="0.128">
+  <NugetDependency Id="SyUqbFfg8NpMLi46pzs5pN" Location="VL.CoreLib" Version="2024.6.7-0308-g293be43e1a" />
   <Patch Id="E5XxHG4fWD1Mq0PQELXuax">
     <Canvas Id="EfcIVYjCde1OMzwuTvJMSC" DefaultCategory="VL.Orpheus" CanvasType="FullCategory">
       <!--
@@ -1109,6 +1109,13 @@
                   <Pin Id="Kp5XUQGzKP4Pr4mWcYbSwn" Name="Index" Kind="InputPin" />
                   <Pin Id="Luu0Tm53tsZN2k0zt2O4YO" Name="Result" Kind="OutputPin" />
                 </Node>
+                <Node Bounds="470,172,72,19" Id="Hyznx186VUSO6aWYStRpcd">
+                  <p:NodeReference LastCategoryFullName="VL.Orpheus.Utils.Scales" LastDependency="VL.Orpheus.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="CHROMATIC" />
+                  </p:NodeReference>
+                  <Pin Id="LTR4qIlnP7vN2Ea2B7QjzJ" Name="CHROMATIC" Kind="OutputPin" />
+                </Node>
               </Patch>
               <ControlPoint Id="A03PAHq8tRXPRCE7dz1arP" Bounds="642,-35" Alignment="Top" />
               <ControlPoint Id="M4GHsgxbaAvNMDHSxVz3ub" Bounds="485,837" Alignment="Bottom" />
@@ -1150,10 +1157,8 @@
           <Link Id="SWagaY299aXNnBOgOJdT7Q" Ids="KWwjdRe8ayiP9GjxrH3joB,NQLcwmwFvrPMxwWYHl17ZL" />
           <Link Id="EorKl92dKQgQT1C7rJldxc" Ids="MKiHQcZi5L9LBRywaEUobV,MffdwUNkRaPOEIAKXeUx7Z" />
           <Link Id="Lr9DiF2I1QWPIfdwkhOd5C" Ids="MffdwUNkRaPOEIAKXeUx7Z,Cd5ybXY4qUjPRW5ctaDmWA" />
-          <Link Id="A2xwc7nSQzqO5rOqh6MLOx" Ids="EZhFHo4t0yJMknK2lptbEh,KXn7LIXYANxNWHnbTwoSgp" />
           <Link Id="EpYEff3eAxRMuzACnVXDP6" Ids="Az4eayNbYLMMdpG27zd3la,PmqU3p3uVBQOyjZSJWxBxC" />
           <Link Id="B0GG0bKNtgALoc0kYCiHHE" Ids="M1T9Up3nJKhObqAtk6XmHe,DSmTzuU4uGXNojT0TmqPQI" />
-          <Link Id="A4APxqmQVXGPMHwzPyBRfr" Ids="EZhFHo4t0yJMknK2lptbEh,CJYTK44ysCzOc4fmByBsXA" />
           <Link Id="N6J3vC2TjYcOKGPElrwTk1" Ids="M1T9Up3nJKhObqAtk6XmHe,Kp5XUQGzKP4Pr4mWcYbSwn" />
           <Link Id="EvcZLVz25ysORFAYRMraQ1" Ids="Luu0Tm53tsZN2k0zt2O4YO,OsaIi1Wxw5CNwm3FFAvBbo" />
           <Link Id="US4KmoZJnccMxrvXukYpie" Ids="OsaIi1Wxw5CNwm3FFAvBbo,Pu3Zct8lZiuLLVq5ehw0vb" />
@@ -1168,6 +1173,8 @@
           <Link Id="HsHgRoCi76ENjGPL8hALxv" Ids="QzFrBsi8ythLYpMAJlAKvS,F6gg6W6Y1DTN3PDQf2tuom" />
           <Link Id="TOmFELn7sUIL1edWguydZW" Ids="N9yei5cPKvVP71Nq9tuDvU,QzFrBsi8ythLYpMAJlAKvS" />
           <Link Id="KXO5Tpl3llCNiVojcGdquR" Ids="M6QE4BlTjZZL70yMBJA0Wk,N9yei5cPKvVP71Nq9tuDvU" IsHidden="true" />
+          <Link Id="JX6ePlhWxQkLupnU6p6Sce" Ids="LTR4qIlnP7vN2Ea2B7QjzJ,CJYTK44ysCzOc4fmByBsXA" />
+          <Link Id="Vgg7Hozi991LG8x0OEfeVF" Ids="LTR4qIlnP7vN2Ea2B7QjzJ,KXn7LIXYANxNWHnbTwoSgp" />
         </Patch>
       </Node>
       <Canvas Id="PnUGqBJffssOIRD8zVO0aO" Name="Utils" Position="717,119">
@@ -2557,11 +2564,6 @@
             <Pin Id="MPVQZ0dTiwpQDGtzZtX3oM" Name="Octave" Kind="InputPin" Bounds="560,43" DefaultValue="0" />
             <Pin Id="Q4h1GvlqPo2PsYy9kSL7N0" Name="Scale" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="SCJ9aZuKUSwMmWWnpCq8A3">
             <Fragment Id="D6nSJswTAI0O5hqLXHxUwd" Patch="BJCB7dWFxj2N7fklIjaprm" Enabled="true" />
             <Fragment Id="JWzggyb6fAzOJxDbUksSRB" Patch="G4jSKsOMbFnLMSWLGcZTEi" Enabled="true" />
