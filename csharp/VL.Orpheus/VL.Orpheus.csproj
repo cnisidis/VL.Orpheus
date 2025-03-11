@@ -11,4 +11,11 @@
     <PackageReference Include="VL.Core" Version="2024.6.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Chords\" />
+    <Folder Include="Intervals\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Rythms\" />
+  </ItemGroup>
+
 </Project>

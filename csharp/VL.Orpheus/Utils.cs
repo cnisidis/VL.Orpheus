@@ -50,21 +50,7 @@ public static class NoteSymbols
 
     }
 
-    public enum Chromatic
-    {
-        C = 0,
-        Ch,
-        D,
-        Dh,
-        E,
-        F,
-        Fh,
-        G,
-        Gh,
-        A,
-        Ah,
-        B
-    }
+    
 
     //https://www.cyberdefinitions.com/music-symbols.html
     public static Dictionary<EnumAccidentals, char> Accidentals = new Dictionary<EnumAccidentals, char>() {
@@ -75,10 +61,7 @@ public static class NoteSymbols
 
     };
 
-    public static String Format(byte hex)
-    {
-        return string.Format("{0}", hex);
-    }
+    
 
     public enum HeptatonicsEnum
     {
