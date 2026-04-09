@@ -1,4 +1,5 @@
 
+using Microsoft.CSharp;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -50,7 +51,7 @@ public static class NoteSymbols
 
     }
 
-    
+
 
     //https://www.cyberdefinitions.com/music-symbols.html
     public static Dictionary<EnumAccidentals, char> Accidentals = new Dictionary<EnumAccidentals, char>() {
@@ -61,7 +62,10 @@ public static class NoteSymbols
 
     };
 
-    
+
+    public const string Sharp =  "\u266F";
+
+
 
     public enum HeptatonicsEnum
     {

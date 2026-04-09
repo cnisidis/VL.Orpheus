@@ -100,6 +100,6 @@ namespace VL.Orpheus.Notes
             return noteIndex + 12 * octave - a4Index;
         }
 
-        public override string ToString() => $"{Index+": "}{Name}{ToSymbol(Accent)}{Octave}";
+        public override string ToString() => $"{Name}{ToSymbol(Accent)}{Octave}";
     }
 }

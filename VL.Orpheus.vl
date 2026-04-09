@@ -1,61 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UmLPTaWfuhpNDyAWn33HfD" LanguageVersion="2025.7.0-0200-g4a7221ecd9" Version="0.128">
-  <NugetDependency Id="SyUqbFfg8NpMLi46pzs5pN" Location="VL.CoreLib" Version="2025.7.0-0200-g4a7221ecd9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="UmLPTaWfuhpNDyAWn33HfD" LanguageVersion="2025.7.1" Version="0.128">
+  <NugetDependency Id="SyUqbFfg8NpMLi46pzs5pN" Location="VL.CoreLib" Version="2025.7.1" />
   <Patch Id="E5XxHG4fWD1Mq0PQELXuax">
     <Canvas Id="EfcIVYjCde1OMzwuTvJMSC" DefaultCategory="VL.Orpheus" CanvasType="FullCategory">
-      <!--
-
-    ************************ Note ************************
-
--->
-      <Node Name="Note" Bounds="988,-69" Id="ArSod8HBDpePGnXfRFsEg1">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Notes" LastDependency="VL.Orpheus.csproj">
-          <Choice Kind="TypeFlag" Name="Note" />
-          <FullNameCategoryReference ID="VL.Orpheus.Notes" />
-          <AssemblyReference ID="VL.Orpheus.csproj" />
-        </p:TypeAnnotation>
-        <Patch Id="SZvFDim2fdTOd2ngYRDnwB">
-          <Canvas Id="GXQuicluFBdLfbynCCUPpF" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="TIEiQ2tHbMgPBsXIzh5gfV" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Scale ************************
-
--->
-      <Node Name="Scale" Bounds="993,-20" Id="VNjhG1wJa48N3LpUmWEebd">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <CategoryReference Kind="Category" Name="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Scales" LastDependency="VL.Orpheus.csproj">
-          <Choice Kind="TypeFlag" Name="Scale" />
-          <FullNameCategoryReference ID="VL.Orpheus.Scales" />
-          <AssemblyReference ID="VL.Orpheus.csproj" />
-        </p:TypeAnnotation>
-        <Patch Id="Dg23SWRkLYiP3w7kVOfE0v">
-          <Canvas Id="APMzlXbxT1kN31FhjbyzD3" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="KYY9axPoPB4OF8zLuUCVHN" IsHidden="true" />
-        </Patch>
-      </Node>
       <!--
 
     ************************ NoteFromIndex ************************
 
 -->
-      <Node Name="NoteFromIndex" Bounds="1033,50,112,82" Id="RvzrinEv3SkO0hc70qVaKa">
+      <Node Name="NoteFromIndex" Bounds="971,70,112,82" Id="RvzrinEv3SkO0hc70qVaKa">
         <p:NodeReference>
           <Choice Kind="OperationDefinition" Name="Operation" />
           <CategoryReference Kind="Category" Name="Primitive" />
         </p:NodeReference>
         <p:HideCategory p:Type="Boolean">false</p:HideCategory>
         <Patch Id="Tq6CfzgnGtdML757YwUZyf">
-          <Node Bounds="1045,82,86,19" AutoConnect="true" Id="PgqOcctdG41LrHIOwDftKJ">
+          <Node Bounds="983,102,86,19" AutoConnect="true" Id="PgqOcctdG41LrHIOwDftKJ">
             <p:NodeReference LastCategoryFullName="VL.Orpheus.Notes.NoteUtils" LastDependency="VL.Orpheus.csproj">
               <Choice Kind="OperationNode" Name="NoteFromIndex" />
               <FullNameCategoryReference ID="VL.Orpheus.Notes.NoteUtils" />
@@ -68,271 +28,764 @@
         </Patch>
       </Node>
       <Canvas Id="NybW44Q7krkLWufkgDHgyU" Name="Scales" Position="1215,-20">
-        <!--
+        <Canvas Id="O0KPlXHblNXL9Q8xdJcnpL" Name="Western" Position="344,100">
+          <!--
 
     ************************ ACOUSTIC ************************
 
 -->
-        <Node Name="ACOUSTIC" Bounds="334,174,112,82" Id="URESADMMkTkMn9za6BLTBK">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="JQnjjpoA5sgOpb4qwGRr4O">
-            <Node Bounds="346,206,63,19" AutoConnect="true" Id="BZki32lPMd1O2VlOuxuMlH">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="ACOUSTIC" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="L6E0Zo1VhcZQbzvokHCA4i" Name="ACOUSTIC" Kind="OutputPin" />
-            </Node>
-            <Pin Id="PTpVHahBXtFOS8UlXTF806" Name="ACOUSTIC" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="ACOUSTIC" Bounds="507,270,112,82" Id="M2rNfegtCI5QMwWxKVDJMU">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="IY5FViDp51nPnR6SkWJPgq">
+              <Node Bounds="519,302,63,19" AutoConnect="true" Id="GRyDjb9j69IPTjfm4bWdnX">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="ACOUSTIC" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="KQrOaLPToFBPpysEkivLoR" Name="ACOUSTIC" Kind="OutputPin" />
+              </Node>
+              <Pin Id="Sip6y4pyshYL8Il9lKM1cm" Name="ACOUSTIC" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ AEOLIAN ************************
 
 -->
-        <Node Name="AEOLIAN" Bounds="614,174,112,82" Id="CNVjao91wijPbj6Wo94UwQ">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="QZvL95afq7JQUIm2GZjrFp">
-            <Node Bounds="626,206,56,19" AutoConnect="true" Id="MwXmXx6qmf4OTRT261qeGG">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="AEOLIAN" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="NpuUD7C14fLPbMmCxf5USv" Name="AEOLIAN" Kind="OutputPin" />
-            </Node>
-            <Pin Id="N4DLxVzhsiXLn146aQX1zc" Name="AEOLIAN" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
-
-    ************************ CHROMATIC ************************
-
--->
-        <Node Name="CHROMATIC" Bounds="894,174,112,82" Id="CqnoSpPgDD2PJngCmzF9GP">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="K4d2CGFmG7IMQg09uPYHd9">
-            <Node Bounds="906,206,72,19" AutoConnect="true" Id="GdhPCJVYkFQQat4L4857C6">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="CHROMATIC" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="GI8bdntqCYTOEdFpDzANFk" Name="CHROMATIC" Kind="OutputPin" />
-            </Node>
-            <Pin Id="Iy3TEpgJlfhL9KZi6BhZZi" Name="CHROMATIC" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="AEOLIAN" Bounds="772,416,112,82" Id="V7lLf0L0c1yPFwFQVVQBtJ">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="S9FgOPy573NNjF1Vslopo6">
+              <Node Bounds="784,448,56,19" AutoConnect="true" Id="QgBuBltfCXyM924Jg5qEqc">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="AEOLIAN" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="UbcoXwahL4wNFBPqsBcH52" Name="AEOLIAN" Kind="OutputPin" />
+              </Node>
+              <Pin Id="ChkWYeK5d8vMJOHDwDs7ag" Name="AEOLIAN" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ DORIAN ************************
 
 -->
-        <Node Name="DORIAN" Bounds="332,324,114,82" Id="RKH8mzialiCPru6KDo5VcT">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="JXqV1zOOwXhNl8L1VzVKiR">
-            <Node Bounds="346,356,53,19" AutoConnect="true" Id="F6x6PF7SrmtNs9HI3qs73P">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="DORIAN" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="DiDscmeJpslNqf5nvlXgOh" Name="DORIAN" Kind="OutputPin" />
-            </Node>
-            <Pin Id="TdIbmMc5TjNODFIZuIQiAg" Name="DORIAN" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
-
-    ************************ FLAT_ANNOT ************************
-
--->
-        <Node Name="FLAT_ANNOT" Bounds="614,324,112,82" Id="G78ISFnpNhPPMt9lSJZmbD">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="BzvFJ7kID1JNOKN1r0CB4L">
-            <Node Bounds="626,356,77,19" AutoConnect="true" Id="M9jYPzobzzcO3nQQ0wGq8I">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="FLAT_ANNOT" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="VuxTmxLetQXLAzP7UUYUYr" Name="FLAT_ANNOT" Kind="OutputPin" />
-            </Node>
-            <Pin Id="H6hW8S0rDCUPkQbPExqMBj" Name="FLAT_ANNOT" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="DORIAN" Bounds="505,420,114,82" Id="Hm4tbz2fv60NodgkY1LJBJ">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="QRge0NPRqooQSixKcI5OFo">
+              <Node Bounds="519,452,53,19" AutoConnect="true" Id="AmpQATDIbRqLFaNtsrfGfl">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="DORIAN" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="BCC46FSAcgUPGU4FWCMGQi" Name="DORIAN" Kind="OutputPin" />
+              </Node>
+              <Pin Id="DosX8lL4RVXQVVoHaSjc6j" Name="DORIAN" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ IONIAN ************************
 
 -->
-        <Node Name="IONIAN" Bounds="890,324,116,82" Id="TeXokvIoNsQMQjo8v76S1o">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="MQM8q5mgs9OObmfXgonPYV">
-            <Node Bounds="906,356,49,19" AutoConnect="true" Id="N0Mzb9v3Q6qMQfDwRsyfdQ">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="IONIAN" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="KDktz2x13a9My36ScnCQTi" Name="IONIAN" Kind="OutputPin" />
-            </Node>
-            <Pin Id="Mer6qv6dE1MLxZn7Q1raJG" Name="IONIAN" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="IONIAN" Bounds="1063,420,116,82" Id="GFc0gkKdJ1bNrLnEr3JZFs">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="EHn6F7KkL4lNNVPr2vbxEA">
+              <Node Bounds="1079,452,49,19" AutoConnect="true" Id="O9phm6cdk2LM3nMSySUIco">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="IONIAN" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="Q8sA8Sry4a6PKyL6dx4Q5G" Name="IONIAN" Kind="OutputPin" />
+              </Node>
+              <Pin Id="FXLItGhvSDtLSngnxk0eOT" Name="IONIAN" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ LOCRIAN ************************
 
 -->
-        <Node Name="LOCRIAN" Bounds="334,474,112,82" Id="HpoySdzatusNH4gesNB4Os">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="OsF2O3zCXhyOI9oVKGOw8f">
-            <Node Bounds="346,506,57,19" AutoConnect="true" Id="UEgKAbDHBK7LqscsbabxyQ">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="LOCRIAN" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="Fq2d4J18g9xL7mr28ucMZh" Name="LOCRIAN" Kind="OutputPin" />
-            </Node>
-            <Pin Id="KpBylcEBJyWM9Si7iP3LMx" Name="LOCRIAN" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="LOCRIAN" Bounds="507,570,112,82" Id="Sxzx6jlqkImNcDhO9EGZRb">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="Qc3NZ2ae5LKNalhlMybvmw">
+              <Node Bounds="519,602,57,19" AutoConnect="true" Id="Q3TsYQODDOWNpRmMAMHLGw">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="LOCRIAN" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="JWVcMqtr2qTOmIYIOuRvEh" Name="LOCRIAN" Kind="OutputPin" />
+              </Node>
+              <Pin Id="F8LGOeRTNcOLT4zhRtTNUP" Name="LOCRIAN" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ LYDIAN ************************
 
 -->
-        <Node Name="LYDIAN" Bounds="611,474,115,82" Id="ENkHH6DZNjqOurnTlLCPVQ">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="JvMJJWjIZtJLCMffUferyL">
-            <Node Bounds="626,506,50,19" AutoConnect="true" Id="JDBWuL3WIBEQbBtMkySkLg">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="LYDIAN" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="KNuVzMhPeaqOy96Oba3XPQ" Name="LYDIAN" Kind="OutputPin" />
-            </Node>
-            <Pin Id="DmJSRcTLwYZNQWRuPCDKPG" Name="LYDIAN" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="LYDIAN" Bounds="784,570,115,82" Id="R9zJwCr61eJNWrJhpDqWz4">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="CEVP0a51224OgVlCB4waC1">
+              <Node Bounds="799,602,50,19" AutoConnect="true" Id="VvGalkCLPKVOEwdIFn4tyL">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="LYDIAN" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="VoG0y2OsovNOaje2IMMmrK" Name="LYDIAN" Kind="OutputPin" />
+              </Node>
+              <Pin Id="BRuSQScP924LpMY5vbStKY" Name="LYDIAN" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ MAJOR ************************
 
 -->
-        <Node Name="MAJOR" Bounds="889,474,116,82" Id="VhsJNV8FL7aOzvJDEskwwz">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="Bg2bKjMGKUULakz1zCYWa6">
-            <Node Bounds="906,506,47,19" AutoConnect="true" Id="Eb43Uoqm5i6NNZFJnjG0nH">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="MAJOR" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="LLJ2fimEHKGNhvAfu62Rng" Name="MAJOR" Kind="OutputPin" />
-            </Node>
-            <Pin Id="ErIP6JFK0OzPupyJUVYewG" Name="MAJOR" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="MAJOR" Bounds="1062,570,116,82" Id="AKUhlSQP3eZPGBgvK7wd3L">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="BpjgBBK1dHDMXyOloBAlmx">
+              <Node Bounds="1079,602,47,19" AutoConnect="true" Id="C0TvtXvkjQrQNtAM8o3Wmr">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="MAJOR" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="MjFdISy29bWOpXSc6u5S4R" Name="MAJOR" Kind="OutputPin" />
+              </Node>
+              <Pin Id="UFGZQadoexeNcGbLItp8qK" Name="MAJOR" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ MINOR ************************
 
 -->
-        <Node Name="MINOR" Bounds="329,624,116,82" Id="NVCBICU4vcFO5d9h6ISRtq">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="AwY03P8iUrEOHWJYW0CHLv">
-            <Node Bounds="346,656,47,19" AutoConnect="true" Id="RtY4IXNsc62QI252B4Ze3T">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="MINOR" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="KjnGSfCnUzPPaG5BoyykVP" Name="MINOR" Kind="OutputPin" />
-            </Node>
-            <Pin Id="HE5Tz8vUmv8Oz9jYLWdk30" Name="MINOR" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="MINOR" Bounds="502,720,116,82" Id="Ursai2dGsVoLQkP756ZMpe">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="V0GLsLecBhqLG38H7tX50q">
+              <Node Bounds="519,752,47,19" AutoConnect="true" Id="KsSvO91ZNRMQWPAo5bjuzr">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="MINOR" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="CV28RTn2xtDP84mz9bUYtF" Name="MINOR" Kind="OutputPin" />
+              </Node>
+              <Pin Id="PnAvj8Lste6PNwbGzxxZpc" Name="MINOR" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ MIXOLYDIAN ************************
 
 -->
-        <Node Name="MIXOLYDIAN" Bounds="614,624,112,82" Id="PuRJc9yM9LJP4pIvBNFB3m">
-          <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
-            <CategoryReference Kind="Category" Name="Primitive" />
-          </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="CrsvBrgGM9mMZdGPVFwoKQ">
-            <Node Bounds="626,656,74,19" AutoConnect="true" Id="DeHYBrbmHkTMdMjixvLkaE">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="MIXOLYDIAN" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
-              </p:NodeReference>
-              <Pin Id="USVHq1FZmLfN44WCg6EZz9" Name="MIXOLYDIAN" Kind="OutputPin" />
-            </Node>
-            <Pin Id="DEbdMhpA1ztLK6hBZTMR7T" Name="MIXOLYDIAN" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <Node Name="MIXOLYDIAN" Bounds="787,720,112,82" Id="MjWZJlwMjYvLqODrWEWryz">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="A5flmo0o0KGNVvvhxGDpab">
+              <Node Bounds="799,752,74,19" AutoConnect="true" Id="NrPj3Co98HGPCJVPXZUWKa">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="MIXOLYDIAN" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="IzfW2lxxkRyL6eZ9dSX0cW" Name="MIXOLYDIAN" Kind="OutputPin" />
+              </Node>
+              <Pin Id="HJrS1n6ThWBQA4HkV9SkPP" Name="MIXOLYDIAN" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
 
     ************************ PHRYGIAN ************************
 
 -->
-        <Node Name="PHRYGIAN" Bounds="894,624,112,82" Id="LTH7IhDAmZWMK9PNyldhUT">
+          <Node Name="PHRYGIAN" Bounds="1067,720,112,82" Id="RrmhFgv1rOzNrOBgrcsjy1">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="K0hpwqJQrJfPatnXpTh1o0">
+              <Node Bounds="1079,752,63,19" AutoConnect="true" Id="DBl0bs6rAkBLJWAwnMQJ9A">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="PHRYGIAN" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="CEnV5Nemn9QLxVR3t2iHdc" Name="PHRYGIAN" Kind="OutputPin" />
+              </Node>
+              <Pin Id="PRoqmZmSN9aQGnYyS38tzH" Name="PHRYGIAN" Kind="OutputPin" />
+            </Patch>
+          </Node>
+        </Canvas>
+        <Canvas Id="AKLS25pqug1M4IMiiaYaqY" Name="Anatolian" Position="345,150">
+          <!--
+
+    ************************ Hicaz ************************
+
+-->
+          <Node Name="Hicaz" Bounds="424,256,120,82" Id="QULDZTHN1pkMz1wgXNlnKN">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="Bhi1ODH6JMBOgOeaGP38bb">
+              <Node Bounds="444,288,41,19" AutoConnect="true" Id="Rr0TvlKrQAiNoKPxcCoP7Q">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="Hicaz" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="KPwhyOFFuhrMREoXJWQuHH" Name="Hicaz" Kind="OutputPin" />
+              </Node>
+              <Pin Id="Exw1Pw4f7SxQaIDabLCeN8" Name="Hicaz" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ Kürdi ************************
+
+-->
+          <Node Name="Kürdi" Bounds="832,264,120,82" Id="KTFghbv6vzxPK6PXgJN0ui">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="DzXcwSGV1IGOdx81jA3xuC">
+              <Node Bounds="852,296,41,19" AutoConnect="true" Id="QtQsRZiAHo3L9ZuWUMO0xh">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="Kürdi" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="JmItuZtcwTdLZkFZy4ZxBC" Name="Kürdi" Kind="OutputPin" />
+              </Node>
+              <Pin Id="P0pqafwOfbSPMfsOHQOC6M" Name="Kürdi" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ Nihavend ************************
+
+-->
+          <Node Name="Nihavend" Bounds="684,419,112,82" Id="DU6cwkckpGKLAkPgVv5McA">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="RxviiU7vyNlLPgagXTMFUt">
+              <Node Bounds="696,451,59,19" AutoConnect="true" Id="GftAaZ3HlMuN68mWbp5dxY">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="Nihavend" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="LM1zrROrAwCLtQwg6YoftN" Name="Nihavend" Kind="OutputPin" />
+              </Node>
+              <Pin Id="D1WYHFhFjHAPqQA3ZlRy6g" Name="Nihavend" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ Rast ************************
+
+-->
+          <Node Name="Rast" Bounds="927,363,122,82" Id="AoWBnU4piXwQOfRdjPe2xP">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="E8saYWVO4qiNLD0PblHV72">
+              <Node Bounds="949,395,36,19" AutoConnect="true" Id="SdQBWcBdFzqLFYB8iOIZAI">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="Rast" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="EzYUW9JYYqMOXXWTO3uGM2" Name="Rast" Kind="OutputPin" />
+              </Node>
+              <Pin Id="Q1fubq9rHyeOmbn7MJ7GlF" Name="Rast" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ Saba ************************
+
+-->
+          <Node Name="Saba" Bounds="441,424,121,82" Id="KHzdC68UImSMh099SkwaXa">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="JMRZDLXuyntOHhgo6KFM6x">
+              <Node Bounds="462,456,38,19" AutoConnect="true" Id="Q9oJRPAxrA8Md36l9qQdnF">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="Saba" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="CbwuaPIPlAPOViokOGIuNd" Name="Saba" Kind="OutputPin" />
+              </Node>
+              <Pin Id="Kynu0CSPCw6MdTTqQbGNM1" Name="Saba" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ Ussak ************************
+
+-->
+          <Node Name="Ussak" Bounds="817,486,118,82" Id="AtjQsYZrFUlLadgVJWLrEZ">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="PlJNq7ATEl0N6dNfegGA20">
+              <Node Bounds="836,518,43,19" AutoConnect="true" Id="VqLJ3wHd9a5MnDWOkA47jI">
+                <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="Orpheus.csproj">
+                  <Choice Kind="OperationNode" Name="Ussak" />
+                  <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+                </p:NodeReference>
+                <Pin Id="UaXjKWOasmWLupgGfTdlH8" Name="Ussak" Kind="OutputPin" />
+              </Node>
+              <Pin Id="NksWkBt908oPEqKWZZhKvc" Name="Ussak" Kind="OutputPin" />
+            </Patch>
+          </Node>
+        </Canvas>
+      </Canvas>
+      <Canvas Id="OnXD8dsrZXKPWEK55i2ZI2" Name="Annotations" Position="1215,20">
+        <!--
+
+    ************************ DOUBLE_FLAT ************************
+
+-->
+        <Node Name="DOUBLE_FLAT" Bounds="699,254,112,82" Id="VdGTaTzh4v3PGUPGFjVQEY">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" Name="Operation" />
             <CategoryReference Kind="Category" Name="Primitive" />
           </p:NodeReference>
           <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="AfTZdP07IP4NoeTiayUPTD">
-            <Node Bounds="906,656,63,19" AutoConnect="true" Id="L6cEhDxdrbLNtNaseqJMDt">
-              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.ScaleUtils" LastDependency="VL.Orpheus.csproj">
-                <Choice Kind="OperationNode" Name="PHRYGIAN" />
-                <FullNameCategoryReference ID="VL.Orpheus.Scales.ScaleUtils" />
+          <Patch Id="CGMTw2kLdI5M4Mvr0JVyTY">
+            <Node Bounds="711,286,80,19" AutoConnect="true" Id="QCR7EDryyueL1DKmwlDb5x">
+              <p:NodeReference LastCategoryFullName="VL.Orpheus.Notes.NoteUtils" LastDependency="VL.Orpheus.csproj">
+                <Choice Kind="OperationNode" Name="DOUBLE_FLAT" />
+                <FullNameCategoryReference ID="VL.Orpheus.Notes.NoteUtils" />
               </p:NodeReference>
-              <Pin Id="LHXAv02MiCLNBFj0uSSNul" Name="PHRYGIAN" Kind="OutputPin" />
+              <Pin Id="HTfL7QREJQNM9dAwDCLeXj" Name="DOUBLE_FLAT" Kind="OutputPin" />
             </Node>
-            <Pin Id="BmpY6pfzoxWLMNg6idIQR3" Name="PHRYGIAN" Kind="OutputPin" />
+            <Pin Id="JdBIYVgor3xNnp3UBziI6J" Name="DOUBLE_FLAT" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ DOUBLE_SHARP ************************
+
+-->
+        <Node Name="DOUBLE_SHARP" Bounds="979,254,112,82" Id="RuOv5NM7n4bPDYx3c5yxuI">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="VxdS1mD6GRvQWmw8KT6yBQ">
+            <Node Bounds="991,286,87,19" AutoConnect="true" Id="QRLNX4g9y2VN6YuRiCZLlw">
+              <p:NodeReference LastCategoryFullName="VL.Orpheus.Notes.NoteUtils" LastDependency="VL.Orpheus.csproj">
+                <Choice Kind="OperationNode" Name="DOUBLE_SHARP" />
+                <FullNameCategoryReference ID="VL.Orpheus.Notes.NoteUtils" />
+              </p:NodeReference>
+              <Pin Id="Rhv7JkH1w7yLjrutasIFPh" Name="DOUBLE_SHARP" Kind="OutputPin" />
+            </Node>
+            <Pin Id="Jx1qKagQ78NQRgHQUATjpd" Name="DOUBLE_SHARP" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ FLAT ************************
+
+-->
+        <Node Name="FLAT" Bounds="690,404,120,82" Id="FWLd4O0552XQME9OyxPJxU">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="F3OkRXTRuCMP9aCbhC1ft0">
+            <Node Bounds="711,436,39,19" AutoConnect="true" Id="TVhRepDCENMLkgH5zJwktX">
+              <p:NodeReference LastCategoryFullName="VL.Orpheus.Notes.NoteUtils" LastDependency="VL.Orpheus.csproj">
+                <Choice Kind="OperationNode" Name="FLAT" />
+                <FullNameCategoryReference ID="VL.Orpheus.Notes.NoteUtils" />
+              </p:NodeReference>
+              <Pin Id="PHobNT8Fd9OO7lAtYENs6i" Name="FLAT" Kind="OutputPin" />
+            </Node>
+            <Pin Id="CkDmntc0PcEMNXiES6bD7L" Name="FLAT" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ NATURAL ************************
+
+-->
+        <Node Name="NATURAL" Bounds="979,404,112,82" Id="PSpwokbVOGOPZJzoFBsZN2">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="TNmjAORTY0bObhRFZvVjOk">
+            <Node Bounds="991,436,60,19" AutoConnect="true" Id="DUWd2L1RYrOP0XdYLv33eu">
+              <p:NodeReference LastCategoryFullName="VL.Orpheus.Notes.NoteUtils" LastDependency="VL.Orpheus.csproj">
+                <Choice Kind="OperationNode" Name="NATURAL" />
+                <FullNameCategoryReference ID="VL.Orpheus.Notes.NoteUtils" />
+              </p:NodeReference>
+              <Pin Id="AvwSbrcfFxmPJAwut6xwNH" Name="NATURAL" Kind="OutputPin" />
+            </Node>
+            <Pin Id="DzXAAn0LYxJQMnNseGyhlU" Name="NATURAL" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ SHARP ************************
+
+-->
+        <Node Name="SHARP" Bounds="694,554,117,82" Id="EfxOEXQFgX5Oa1L4m4d5k9">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="TRK5d2ieerwNuNi305HjZU">
+            <Node Bounds="711,586,46,19" AutoConnect="true" Id="K2o8lMlF8F8MRWSuxu3MRB">
+              <p:NodeReference LastCategoryFullName="VL.Orpheus.Notes.NoteUtils" LastDependency="VL.Orpheus.csproj">
+                <Choice Kind="OperationNode" Name="SHARP" />
+                <FullNameCategoryReference ID="VL.Orpheus.Notes.NoteUtils" />
+              </p:NodeReference>
+              <Pin Id="Vuk7W66NShFN3AybmWHcGA" Name="SHARP" Kind="OutputPin" />
+            </Node>
+            <Pin Id="S7mUIc5g2mtOhhqhYBOmMp" Name="SHARP" Kind="OutputPin" />
           </Patch>
         </Node>
       </Canvas>
+      <!--
+
+    ************************ Scale ************************
+
+-->
+      <Node Name="Scale" Bounds="967,-250" Id="Bskce6itQIfMNc1GHuxO0e">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Scales" LastDependency="Orpheus.csproj">
+          <Choice Kind="TypeFlag" Name="Scale" />
+          <FullNameCategoryReference ID="VL.Orpheus.Scales" />
+          <AssemblyReference ID="Orpheus.csproj" />
+        </p:TypeAnnotation>
+        <Patch Id="HAI91dWtEVQOzQul2grT5c">
+          <Canvas Id="DoS3eExMle8OTnGTZRTUbl" CanvasType="Group" />
+          <ProcessDefinition Id="CTLPsm9Pm0CLZCMHKEnCpL" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ GetNaturalIntervals ************************
+
+-->
+      <Node Name="GetNaturalIntervals" Bounds="747,-160,127,82" Id="Cg2M1pzVpxaOam9lGkHq1C">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="HksYguK5iXSPMKpYEBc1sQ">
+          <Node Bounds="759,-128,103,19" AutoConnect="true" Id="A8nLDWZdkOvL906D0gUK7H">
+            <p:NodeReference LastCategoryFullName="VL.Orpheus.Scales.Scale" LastDependency="Orpheus.csproj">
+              <Choice Kind="OperationNode" Name="GetNaturalIntervals" />
+              <FullNameCategoryReference ID="VL.Orpheus.Scales.Scale" />
+            </p:NodeReference>
+            <Pin Id="I2Q79OuZcoWL2McKSKktsf" Name="Scale Intervals" Kind="InputPin" />
+            <Pin Id="GY82JAvmkHKOKwQ8E1nzzG" Name="Root Offset" Kind="InputPin" />
+            <Pin Id="HSd6l8KoLxkMPJyyWhTtEn" Name="Count Tones" Kind="InputPin" />
+            <Pin Id="GWpjDXwz18mPzn4mZZrj5D" Name="Output" Kind="OutputPin" />
+            <Pin Id="TeYqKmyUYwHMqIZlEJE9Ib" Name="Natural" Kind="OutputPin" />
+            <Pin Id="FX44CWgUUkZOzPmPNR4SPq" Name="Third" Kind="OutputPin" />
+            <Pin Id="VIrsngzn6XZLnKOkRx53ZS" Name="Root" Kind="OutputPin" />
+          </Node>
+          <Pin Id="FUeIQwmFyVvMdMhKgc7M70" Name="Scale Intervals" Kind="InputPin" />
+          <Pin Id="NKjtsgT253QNZI9tBWe6mE" Name="Root Offset" Kind="InputPin" />
+          <Pin Id="EWBDELqciDqMne9otRXz0A" Name="Count Tones" Kind="InputPin" />
+          <Pin Id="Nl3VkLos0VePKCjp1jKV0f" Name="Output" Kind="OutputPin" />
+          <Pin Id="TYarQ0vQDwlQboM3VmQSN3" Name="Natural" Kind="OutputPin" />
+          <Pin Id="G109uQRQ6cGLlXsS6zp2Sp" Name="Third" Kind="OutputPin" />
+          <Pin Id="Nb8bbIGU6eXLkZZnbm56bP" Name="Root" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ NoteAnnotation ************************
+
+-->
+      <Node Name="NoteAnnotation" Bounds="967,-100" Id="VyjMVT7yf49LHdnszHmIPk">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Orpheus.Scales.Scale" LastDependency="Orpheus.csproj">
+          <Choice Kind="TypeFlag" Name="NoteAnnotation" />
+          <FullNameCategoryReference ID="VL.Orpheus.Scales.Scale" />
+          <AssemblyReference ID="Orpheus.csproj" />
+        </p:TypeAnnotation>
+        <Patch Id="TiKDW2GcxLSQQ2Dbbljvkn">
+          <Canvas Id="OA21lF7v3ZMNMOnaIRxS56" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="MxzkWTfHhgvO6YUCrULLy4" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ResolveNotes ************************
+
+-->
+      <Node Name="ResolveNotes" Bounds="963,-210" Id="Bu7H4UqeSV6MVRx6L1hvIE">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" />
+        </p:NodeReference>
+        <Patch Id="TL1jituzxovO26s4iwQveD">
+          <Canvas Id="SfhkkLH68QwL4tTbQK50oM" CanvasType="Group">
+            <Node Bounds="668,700,129,19" Id="LYlIjk4iP7MNeVw4q3kvK3">
+              <p:NodeReference LastCategoryFullName="VL.Orpheus.Scale" LastDependency="VL.Orpheus.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ResolveScaleAnnotations" />
+              </p:NodeReference>
+              <Pin Id="SVw7FsiX6DALTSX0KERXLK" Name="Actual Cents" Kind="InputPin" />
+              <Pin Id="GyMB5HW33DtMdd9tkAmquQ" Name="Root Index" Kind="InputPin" DefaultValue="0" />
+              <Pin Id="PCwShCCSoQ1LZq05SM9eHe" Name="Output" Kind="OutputPin" />
+              <Pin Id="LWdQkfi8kWGLwutSPtJyy8" Name="Micro Offset" Kind="InputPin" DefaultValue="0" />
+            </Node>
+            <Node Bounds="656,728,148,178" Id="Eym9NQaBGgXL3bhLrPwumI">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+                <Choice Kind="ApplicationFlag" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="Lzo6KJDSc5DNypiN7yGU2d" Name="Break" Kind="OutputPin" />
+              <Patch Id="AtjMZwmM0dyOqHjxL7M2Cb" ManuallySortedPins="true">
+                <Patch Id="EpHebBxE2YTMc3aIf0O8bU" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="Pu5Za4oTZ1gMbk8mVepePB" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="Ma1HlVEAmJaOqHZjWQp1EB" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="668,780,73,26" Id="VsRFRwbsK59QLEk6zcqkOu">
+                  <p:NodeReference LastCategoryFullName="VL.Orpheus.NoteAnnotation" LastDependency="VL.Orpheus.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="NoteAnnotation" />
+                    <Choice Kind="OperationCallFlag" Name="FullName" />
+                  </p:NodeReference>
+                  <Pin Id="OJ7t43aR4j4LaevRcJscSu" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="EOWLhxlHmUZPPFtwDXPtwv" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LWmz5vE1GwSNRYQZsMieWa" Name="Full Name" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="668,851,122,26" Id="QOZ3WfdFlMBLaOnWmv27li">
+                  <p:NodeReference LastCategoryFullName="VL.Orpheus.NoteAnnotation" LastDependency="VL.Orpheus.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="intervalToNext" />
+                  </p:NodeReference>
+                  <Pin Id="ADuyVG27FJAQBfDqZO5fEU" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VBJLtyjIQroOZ3hYTc8rWP" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="SJCvyahMMjyMn7azbWphx2" Name="Interval To Next" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="NHEcJtExYbNM0RsCIzB4sU" Bounds="670,734" Alignment="Top" />
+              <ControlPoint Id="QKjWN9Z32QYNJWIl02KvXY" Bounds="738,900" Alignment="Bottom" />
+              <ControlPoint Id="UdE5ydh3ddPMzUJIyxQh8l" Bounds="787,900" Alignment="Bottom" />
+            </Node>
+            <Node Bounds="668,300,63,26" Id="AS4zrNOv9iKLiARj7qKHae">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetSpread" />
+              </p:NodeReference>
+              <Pin Id="RvPlZ8Hg0b2PTOs7xYPj4T" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GGDYJgXJHTnLDGsZJste3Z" Name="Index" Kind="InputPin" DefaultValue="0" />
+              <Pin Id="QX9go8mBGqoPou8YTLcVU2" Name="Count" Kind="InputPin" DefaultValue="7" />
+              <Pin Id="ATbz7R1kCD0NZ7m8UeUSyH" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="M2nZRIhlGrYNpwr8tJk72I" Comment="Index" Bounds="699,280,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="656,352,127,270" Id="QjVoSaGYD7ZPRx8MymIKez">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
+              </p:NodeReference>
+              <Pin Id="RxJMMCFN30kOTbfYy3U6De" Name="Iteration Count" Kind="InputPin" DefaultValue="7" />
+              <Pin Id="PnbcuOz8yelMKaWXka0V48" Name="Break" Kind="OutputPin" />
+              <Patch Id="QkXE8C8WIqoMG8j4H1ykuv" ManuallySortedPins="true">
+                <Patch Id="TU6qZMyFcpxNSf4hG7MgLL" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="BG3yOwksKkHMn3DbeN4y3e" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="Td5J1ebTXw3MkqEkH2RUId" Name="Index" Kind="InputPin" />
+                </Patch>
+                <Patch Id="NKqM1k5InOyOCadooEVABH" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="668,500,25,19" Id="JaQ8VAC63ouQczWny43aaR">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="*" />
+                  </p:NodeReference>
+                  <Pin Id="QGVjsG7sGhjN27jKrpJvPy" Name="Input" Kind="InputPin" />
+                  <Pin Id="HC2wihm9SAqMqBmZ8khiWJ" Name="Input 2" Kind="InputPin" DefaultValue="100" />
+                  <Pin Id="AugM37eKqTdMmPc8c1p5Vz" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="668,526,25,19" Id="KxzB8Xz9AWGMhORH9o2gPu">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="+" />
+                  </p:NodeReference>
+                  <Pin Id="ObyUJvIpB4ZN20hbwx9YB0" Name="Input" Kind="InputPin" />
+                  <Pin Id="AonWlYH7CerPGCKVm2PNZk" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="Byg6WpM7rJpM3k5FPHo8DG" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="668,570,39,19" Id="L9vzDcnVuMYQCY6YKHvMrX">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="Math" />
+                    <Choice Kind="OperationCallFlag" Name="MOD" />
+                  </p:NodeReference>
+                  <Pin Id="UyJ2LRKrmkJOnjRnrsYXLw" Name="Input" Kind="InputPin" />
+                  <Pin Id="J2Zi3tH72sQNBRXe2ubrrB" Name="Input 2" Kind="InputPin" DefaultValue="1200" />
+                  <Pin Id="AAgoHBLOV6JNJzwbiMLXaE" Name="Output" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="MQADmOd8x3DLxBqQ1cB17v" Bounds="717,370" />
+                <Node Bounds="746,410,25,19" Id="T0Q2AJx6t7jLTarf2vYFOC">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="&gt;" />
+                  </p:NodeReference>
+                  <Pin Id="Vym9SQU42coLH9YB31Zsal" Name="Input" Kind="InputPin" />
+                  <Pin Id="M1t99uAUKwiO0NUsV3IiFo" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="NGn966rbr53LOPTH5fu42m" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="668,470,52,19" Id="ObRC7Fm1MucMLraTHLHrKb">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                  </p:NodeReference>
+                  <Pin Id="OYPV7USPCUCLzu2xCAIxeI" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DPgE32iYGw2LTwYwku2Kbw" Name="Default Value" Kind="InputPin" />
+                  <Pin Id="O0Q79DWbwGlQaEnTbhLKNT" Name="Index" Kind="InputPin" />
+                  <Pin Id="IU3KKoxT5vJM7cWZZsJDbz" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="715,421,25,19" Id="Pb1aR07tl8lO0SHvDssWFA">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="Math" />
+                    <Choice Kind="OperationCallFlag" Name="+" />
+                  </p:NodeReference>
+                  <Pin Id="PMP6cU13CE3MXgBiueh8ns" Name="Input" Kind="InputPin" />
+                  <Pin Id="FUv4tTW1YRqMMMxOlRtUGr" Name="Input 2" Kind="InputPin" DefaultValue="0" />
+                  <Pin Id="FuSFfDb6tHeMSdzou8n4EN" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="OqgWOxdq6a0M9EV9AYteAF" Bounds="670,616" Alignment="Bottom" />
+              <ControlPoint Id="AI1voBjV7zVLylcSRZH9iJ" Bounds="718,616" Alignment="Bottom" />
+              <ControlPoint Id="BPB4Zob19tmOOhLwM3woki" Bounds="690,358" Alignment="Top" />
+            </Node>
+            <Node Bounds="668,640,63,26" Id="T61KUBFhAM0MbD45oMJFRs">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetSpread" />
+              </p:NodeReference>
+              <Pin Id="O9hyOJPIbcJLAoqxtmQqx0" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Qjk1WaBjRBMLfx0iVEqXuX" Name="Index" Kind="InputPin" DefaultValue="-1" />
+              <Pin Id="NHSYc04cUkfM5NuL09d26W" Name="Count" Kind="InputPin" DefaultValue="7" />
+              <Pin Id="LeDIfKTBqtMNOLCJcXagza" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="V2gCD8dm6GFNoqKhM3lYjc" Bounds="670,180" />
+            <ControlPoint Id="CXY40iuXw8dLspntoFCs0p" Bounds="395,870" />
+            <ControlPoint Id="RRXyZu65YCNO11LNYwm9so" Bounds="894,530" />
+            <ControlPoint Id="FvBkCwVP9xbMDjyQFmTq6r" Bounds="958,580" />
+            <ControlPoint Id="FqyBMbdyVW6LFwtNRSxv7h" Bounds="738,1080" />
+            <ControlPoint Id="CIhj3xYSWgkMA1TYtEFNPs" Bounds="787,1011" />
+          </Canvas>
+          <Patch Id="ITKIIK8X58aO9d5OmkW77W" Name="Create" />
+          <Patch Id="VrDIsGBkAQzOWvHgCyzVZL" Name="Update">
+            <Pin Id="ShpH3nFQX0mN5u15rtnjj7" Name="Scale" Kind="InputPin" DefaultValue="2, 2, 1, 2, 2, 0, 0" />
+            <Pin Id="Imi9RbkoZCKMxpWSMQhpik" Name="Cents" Kind="OutputPin" />
+            <Pin Id="VnxYIN7j2i5LD2oFUHucHf" Name="Root Index" Kind="InputPin" />
+            <Pin Id="KErQObqIMKnPSnhwRwdiY1" Name="Micro Offset" Kind="InputPin" />
+            <Pin Id="TD5BtyLTMCLPRDHbnjMXNv" Name="Full Name" Kind="OutputPin" />
+            <Pin Id="DVAP6Ek48BWPKMW41x0wQ6" Name="Interval To Next" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="A5hUa4fHfvsOcfVui7gVFx">
+            <Fragment Id="QSgThH4vCiVMTiebhj0tQI" Patch="ITKIIK8X58aO9d5OmkW77W" Enabled="true" />
+            <Fragment Id="M5C7Y8tW8mBMnc0O9CJ1dP" Patch="VrDIsGBkAQzOWvHgCyzVZL" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="K6DW4SnwSZ6PP4IGadR6v5" Ids="M2nZRIhlGrYNpwr8tJk72I,GGDYJgXJHTnLDGsZJste3Z" />
+          <Link Id="IHXY7kPZ7k3MjIbtuAzY5C" Ids="PCwShCCSoQ1LZq05SM9eHe,NHEcJtExYbNM0RsCIzB4sU" />
+          <Link Id="N5eIOSuvYRlMXiKeGs3Y9G" Ids="NHEcJtExYbNM0RsCIzB4sU,OJ7t43aR4j4LaevRcJscSu" />
+          <Link Id="TlecG8aOdClL1MZXYCMqNK" Ids="LWmz5vE1GwSNRYQZsMieWa,QKjWN9Z32QYNJWIl02KvXY" />
+          <Link Id="AHbbo2qqfsWQQwyPXYtcTA" Ids="Td5J1ebTXw3MkqEkH2RUId,MQADmOd8x3DLxBqQ1cB17v" IsHidden="true" />
+          <Link Id="RGcw44xuUNzL7cvTYd0c0N" Ids="MQADmOd8x3DLxBqQ1cB17v,Vym9SQU42coLH9YB31Zsal" />
+          <Link Id="ALOwwX7Z3efLFAj9YKtHZM" Ids="MQADmOd8x3DLxBqQ1cB17v,PMP6cU13CE3MXgBiueh8ns" />
+          <Link Id="R12Wx3Ru8BVQQwJUbcVxoj" Ids="IU3KKoxT5vJM7cWZZsJDbz,QGVjsG7sGhjN27jKrpJvPy" />
+          <Link Id="AI5TVqwooisPDEP20Ful6H" Ids="ATbz7R1kCD0NZ7m8UeUSyH,OYPV7USPCUCLzu2xCAIxeI" />
+          <Link Id="FFGUrLJE1jmOWpGRNbl1Vi" Ids="BPB4Zob19tmOOhLwM3woki,AI1voBjV7zVLylcSRZH9iJ" IsFeedback="true" />
+          <Link Id="OjGQ1yb0xvVP3l8kGfz22V" Ids="BPB4Zob19tmOOhLwM3woki,AonWlYH7CerPGCKVm2PNZk" />
+          <Link Id="D4NnlaXukyeQGbOQjdi7Kn" Ids="AugM37eKqTdMmPc8c1p5Vz,ObyUJvIpB4ZN20hbwx9YB0" />
+          <Link Id="OY5DDRx3GwaP8MyKxTLiAW" Ids="Byg6WpM7rJpM3k5FPHo8DG,UyJ2LRKrmkJOnjRnrsYXLw" />
+          <Link Id="Oa9ZgRKvxQWLU4u9IqFNar" Ids="FuSFfDb6tHeMSdzou8n4EN,O0Q79DWbwGlQaEnTbhLKNT" />
+          <Link Id="UvAdGl3USofOQBKJx99yIq" Ids="OqgWOxdq6a0M9EV9AYteAF,O9hyOJPIbcJLAoqxtmQqx0" />
+          <Link Id="UqvYX4UwfJgLun8CH7J0UZ" Ids="LeDIfKTBqtMNOLCJcXagza,SVw7FsiX6DALTSX0KERXLK" />
+          <Link Id="UUQovkrgv8UMvGykBG6wIc" Ids="V2gCD8dm6GFNoqKhM3lYjc,RvPlZ8Hg0b2PTOs7xYPj4T" />
+          <Link Id="RPTQzKk0FQsQROQ4oy9fmW" Ids="ShpH3nFQX0mN5u15rtnjj7,V2gCD8dm6GFNoqKhM3lYjc" IsHidden="true" />
+          <Link Id="E9NxVIBsux6MYodRzpPTG7" Ids="LeDIfKTBqtMNOLCJcXagza,CXY40iuXw8dLspntoFCs0p" />
+          <Link Id="AupKZFhZfYZPBFrtpZex5d" Ids="CXY40iuXw8dLspntoFCs0p,Imi9RbkoZCKMxpWSMQhpik" IsHidden="true" />
+          <Link Id="RQI9xaRZV2fNXNBQ1OThNl" Ids="RRXyZu65YCNO11LNYwm9so,GyMB5HW33DtMdd9tkAmquQ" />
+          <Link Id="IcRRN2ALnY6PuYRttuMriB" Ids="VnxYIN7j2i5LD2oFUHucHf,RRXyZu65YCNO11LNYwm9so" IsHidden="true" />
+          <Link Id="R0uhX1Bi0HiOCkHa41TeXa" Ids="FvBkCwVP9xbMDjyQFmTq6r,LWdQkfi8kWGLwutSPtJyy8" />
+          <Link Id="VtRoLlonvAjQRgjVZNgI2u" Ids="KErQObqIMKnPSnhwRwdiY1,FvBkCwVP9xbMDjyQFmTq6r" IsHidden="true" />
+          <Link Id="TeJI8VeyjxxOB6rvd3opPd" Ids="AAgoHBLOV6JNJzwbiMLXaE,OqgWOxdq6a0M9EV9AYteAF" />
+          <Link Id="Gv6CiPbIgbuNDTqq66UGtU" Ids="AAgoHBLOV6JNJzwbiMLXaE,AI1voBjV7zVLylcSRZH9iJ" />
+          <Link Id="RVkKFX7h5eYMVHoFVJMMcJ" Ids="QKjWN9Z32QYNJWIl02KvXY,FqyBMbdyVW6LFwtNRSxv7h" />
+          <Link Id="Ah7ICTtO1gvO9YI6wOXpeL" Ids="FqyBMbdyVW6LFwtNRSxv7h,TD5BtyLTMCLPRDHbnjMXNv" IsHidden="true" />
+          <Link Id="JObhrU3lCydLwjxX3gzoHp" Ids="EOWLhxlHmUZPPFtwDXPtwv,ADuyVG27FJAQBfDqZO5fEU" />
+          <Link Id="BZWwkE2Pa7rNPR75deUrjM" Ids="SJCvyahMMjyMn7azbWphx2,UdE5ydh3ddPMzUJIyxQh8l" />
+          <Link Id="PNDXKIKuFdEQadxQ1Z6he0" Ids="UdE5ydh3ddPMzUJIyxQh8l,CIhj3xYSWgkMA1TYtEFNPs" />
+          <Link Id="H90dMdyy59oOVsBHABmOJ1" Ids="CIhj3xYSWgkMA1TYtEFNPs,DVAP6Ek48BWPKMW41x0wQ6" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -355,8 +808,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="SdrwHUkbjVDNbU425aA2WW" Location="VL.IO.Midi" Version="1.1.6" />
-  <DocumentDependency Id="Jfb2VtsbxIKNR1oPJrsA29" Location="./help/Overview Music Scales.vl" />
+  <NugetDependency Id="SdrwHUkbjVDNbU425aA2WW" Location="VL.IO.Midi" Version="2.1.1" />
   <NugetDependency Id="QFRQPH6xrn5NONKHp2T7ni" Location="VL.Orpheus" Version="0.0.0" />
-  <ProjectDependency Id="VFHlKITXqArLl4BI0vSiq2" Location="./csharp/VL.Orpheus/VL.Orpheus.csproj" />
+  <ProjectDependency Id="KAVlIXYJbENOq7bzUAoDD1" Location="./src/Orpheus/Orpheus.csproj" />
 </Document>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orpheus", "Orpheus.csproj", "{F27B61A6-6625-1D3D-0137-1060EDFA1693}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F27B61A6-6625-1D3D-0137-1060EDFA1693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27B61A6-6625-1D3D-0137-1060EDFA1693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27B61A6-6625-1D3D-0137-1060EDFA1693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27B61A6-6625-1D3D-0137-1060EDFA1693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59E6DD9C-547C-4F28-A3F8-3B565025F6AC}
+	EndGlobalSection
+EndGlobal

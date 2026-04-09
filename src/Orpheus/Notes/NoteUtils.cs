@@ -13,9 +13,9 @@ namespace VL.Orpheus.Notes
         public static string FLAT => '\u266D'.ToString();
         public static string SHARP => '\u266F'.ToString();
 
-        public static string DOUBLE_SHARP => '\u266F'+'\u266F'.ToString();
+        public static string DOUBLE_SHARP => "𝄪";
 
-        public static string DOUBLE_FLAT => '\u266D' + '\u266D'.ToString();
+        public static string DOUBLE_FLAT => "𝄫";
 
         public static string NATURAL => "";// '\u266E'.ToString();
 
@@ -77,7 +77,14 @@ namespace VL.Orpheus.Notes
                     return "#";
                     break;
 
-                
+                case Accents.DOUBLE_SHARP:
+                    return "##";
+                    break;
+
+                case Accents.DOUBLE_FLAT:
+                    return "bb";
+                    break;
+
 
 
             }

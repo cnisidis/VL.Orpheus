@@ -1,21 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2024.6.6" />
+    <PackageReference Include="VL.Core" Version="2025.7.1" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Chords\" />
     <Folder Include="Intervals\" />
     <Folder Include="Utilities\" />
     <Folder Include="Rythms\" />
   </ItemGroup>
-
 </Project>
