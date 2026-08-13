@@ -31,12 +31,12 @@ namespace VL.Orpheus.Scales
             public int Offset; // Cents difference from "Natural"
             public string FullName;
             public float intervalToNext;
+            public float distanceFromRoot;
+            public float absoluteCents;
         }
 
-        public static Spread<NoteAnnotation> ResolveScaleAnnotations(Spread<float> actualCents, int rootIndex = 0, float microOffset=0)
+        public static Spread<NoteAnnotation> ResolveScaleAnnotations(Spread<float> actualCents, int rootIndex = 0, float microOffset = 0)
         {
-            // 1. Define the "Natural Major" distances (The Reference)
-            // These are the standard distances for C, D, E, F, G, A, B
             int[] naturalMajorPattern = { 0, 200, 400, 500, 700, 900, 1100 };
             string[] letters = { "C", "D", "E", "F", "G", "A", "B" };
 
@@ -44,61 +44,77 @@ namespace VL.Orpheus.Scales
 
             for (int i = 0; i < actualCents.Count; i++)
             {
-                // 2. Rotate the letter and the reference based on your Root
-                int currentLetterIdx = (rootIndex + i) % actualCents.Count;
+                // 1. Resolve Letter
+                int currentLetterIdx = (rootIndex + i) % 7;
                 string letter = letters[currentLetterIdx];
 
-                // Calculate what the "Natural Home" should be for this letter relative to Root
-                // We handle the wrap-around of the 1200-cent octave here
+                float rootBaseCents = naturalMajorPattern[rootIndex] + microOffset;
+
+                // 2. Calculate "Natural" position for this letter relative to Root
                 int home = (naturalMajorPattern[currentLetterIdx] - naturalMajorPattern[rootIndex] + 1200) % 1200;
 
-                // 3. The GOLDEN RULE: Actual - Home
-                float offset = actualCents[i] - (home + microOffset);
-                
-                // Handle octave wrapping for offsets (e.g., -1100 is actually +100)
-                if (offset > 600) offset -= 1200;
-                if (offset < -600) offset += 1200;
+                // 3. Calculate Offset (Actual position vs Natural position)
+                float offset = (actualCents[i] + microOffset) - home;
+
+                // Octave Wrap: ensures -1100 becomes +100 (Sharp) or 1100 becomes -100 (Flat)
+                while (offset > 600) offset -= 1200;
+                while (offset < -600) offset += 1200;
 
                 int roundedOffset = (int)Math.Round(offset);
 
-                // 2. Calculate Interval to Next Note
+                // 4. Intervals
                 float intervalToNext = 0;
                 if (i < actualCents.Count - 1)
-                {
-                    // Simple subtraction of current from next
                     intervalToNext = (actualCents[i + 1] - actualCents[i]) / 100f;
-                }
                 else
-                {
-                    // For the last note, calculate distance to the octave (1200)
                     intervalToNext = (1200 - actualCents[i]) / 100f;
-                }
 
-
-                // 4. Build the string
+                // 5. Symbol Building
                 string symbol = "";
                 if (roundedOffset == 0) symbol = "";
                 else if (roundedOffset == 100) symbol = "♯";
                 else if (roundedOffset == -100) symbol = "♭";
-                else if (roundedOffset == 50) symbol = "𝄪"; // Half-sharp (optional symbol)
-                else if (roundedOffset == -50) symbol = "𝄳"; // Half-flat (optional symbol)
+                else if (roundedOffset == 50) symbol = "𝄪";
+                else if (roundedOffset == -50) symbol = "𝄳";
                 else
                 {
-                    // Fallback for weird Anatolian commas (like 22, 53, etc)
-                    string direction = roundedOffset > 0 ? "♯" : "♭";
-                    symbol = $"({direction}{Math.Abs(roundedOffset)}c)";
+                    string dir = roundedOffset > 0 ? "♯" : "♭";
+                    symbol = $"({dir}{Math.Abs(roundedOffset)}c)";
                 }
+
+                float absoluteCents = rootBaseCents + actualCents[i];
+
                 annotations.Add(new NoteAnnotation
                 {
                     Letter = letter,
-                    Offset = (int)offset,
+                    Offset = roundedOffset,
                     intervalToNext = intervalToNext,
-                    FullName = letter + symbol
-
+                    FullName = letter + symbol,
+                    // Absolute position for audio/oscillator use
+                    distanceFromRoot = actualCents[i] + microOffset,
+                    absoluteCents= absoluteCents
                 });
             }
 
             return annotations.ToSpread();
+        }
+
+        public static Spread<float> IntervalsToCents(Spread<float> intervals)
+        {
+            List<float> cents = new List<float>();
+            float currentTotal = 0;
+
+            // Rule: The first note is ALWAYS 0 relative to itself
+            cents.Add(currentTotal);
+
+            // Stop at Count - 1 because the 7th interval leads to the octave (1200)
+            for (int i = 0; i < intervals.Count - 1; i++)
+            {
+                currentTotal += intervals[i] * 100f;
+                cents.Add(currentTotal);
+            }
+
+            return cents.ToSpread();
         }
 
         public static float CentsToFrequency(float totalCents, float refFrequency = 261.6256f)
@@ -106,6 +122,19 @@ namespace VL.Orpheus.Scales
             // totalCents is the distance from your reference (e.g., C4)
             // 2.0 ^ (cents / 1200)
             return refFrequency * (float)Math.Pow(2.0, totalCents / 1200.0);
+        }
+
+
+        public static void CentsToMidiAndBend(float absoluteCents, out int baseMidiNote, out float bendFraction)
+        {
+            // 1. Get the float MIDI value (e.g., 61.5 for Uşşak D𝄳)
+            float midiFloat = 60 + (absoluteCents / 100f);
+
+            // 2. The Base Note is the floor (e.g., 61)
+            baseMidiNote = (int)Math.Floor(midiFloat);
+
+            // 3. The Bend Fraction is the remainder (e.g., 0.5)
+            bendFraction = midiFloat - baseMidiNote;
         }
         public static Spread<float> GetNaturalIntervals(Spread<float>? ScaleIntervals, float RootOffset, out float Natural, out float Third, out float Root, int countTones = 7)
         {

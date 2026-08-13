@@ -130,4 +130,6 @@ public static class NoteSymbols
         
         return scale.ToSpread();
     }
+
+
 }
